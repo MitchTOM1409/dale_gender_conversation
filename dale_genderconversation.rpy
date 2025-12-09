@@ -878,7 +878,7 @@ label gender_nameshoes:
     m "But not a lot of people remember it has a caveat: "
     extend 3eka "'like any gift, you're allowed to replace it if it no longer fits'."
     m 1rua "If anything, the act of choosing your own name can be a very powerful thing."
-    if not persistent._mas_pm_is_trans or not persistent.gender == "X":
+    if not persistent._mas_pm_is_trans and not persistent.gender == "X":
         m 1hub "This isn't even a thing that's limited to trans people, before you ask. Anybody can do it!"
         m 1eua "Bruno Mars has been quite public about changing his name from Peter Gene Hernandez, for instance."
     m 1wud "And there's so many factors that can go into finding the one that's best for you."
@@ -1872,3 +1872,4 @@ label gender_pronounrant:
     extend 3eub "now you know what to say to the next 'blue hair and pronouns' person you come across, right?"
     m 1kfa "Just tell them how hard it is to talk {i}without{/i} them."
     return "derandom"
+
